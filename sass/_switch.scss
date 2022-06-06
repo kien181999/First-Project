@@ -8,9 +8,10 @@
     box-shadow: 0 5px 7px rgba(0,0,0,.2);
     z-index: 100;
     border-radius: 5px;
-
     transition: all .3s ease;
-
+    @media screen and (max-width: 504.98px) {
+        right: 130;;
+    }
     
     & .s-icon{
         position: absolute;
@@ -28,6 +29,9 @@
         border-radius: 50%;
         @media screen and (max-width: 1023.98px) {
             right: 120%;
+        }
+        @media screen and (max-width: 504.98px) {
+            right: 220%;
         }
         & i{
             line-height: 4rem;

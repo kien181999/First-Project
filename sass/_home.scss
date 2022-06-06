@@ -1,6 +1,6 @@
 .home{
     display: flex;
-    @media screen and (max-width: 767.98px) {
+    @media screen and (max-width: 854px) {
         display: block;
     }
     
@@ -48,8 +48,8 @@
         @media screen and (max-width: 767.98px) {
             align-items: center;
             margin-right: 0;
+            margin-top: 5rem;
         }
-        
     }
     &-name{
         display: flex;
