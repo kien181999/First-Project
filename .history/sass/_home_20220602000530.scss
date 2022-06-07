@@ -1,0 +1,21 @@
+.home{
+    display: flex;
+    &-img{
+        display:grid;
+        place-items: center;
+    }
+    &-jpg{
+        height: 40rem;
+        width: 30rem;
+        margin-left: 10rem;
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-name{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+}

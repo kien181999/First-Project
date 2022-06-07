@@ -1,0 +1,38 @@
+.contact{
+    &-title{
+        margin-bottom: 5rem;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-question{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    &-list{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+    &-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-icon{
+        font-size: 3rem;
+        color: var(--pink-color);
+    }
+    &-form{
+        display: flex;
+        width: 100%;
+    }
+}

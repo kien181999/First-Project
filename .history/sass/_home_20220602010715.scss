@@ -1,0 +1,66 @@
+.home{
+    display: flex;
+    &-img{
+        display:grid;
+        padding: 1rem;
+        position: relative;
+        place-items: center;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border-bottom: px solid var(--pink-color) ;
+            border-left: px solid var(--pink-color) ;
+            bottom: 30px;
+            left: 0;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            border-top: px solid var(--pink-color) ;
+            border-right: px solid var(--pink-color) ;
+            top: 30px;
+            right: 0;
+        }
+    }
+    &-jpg{
+        height: 40rem;
+        width: 30rem;
+
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5rem;
+    }
+    &-name{
+        display: flex;
+     
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &-job{
+        margin-bottom: 2rem;
+    }
+    &-describe{
+        margin-bottom: 10rem;
+    }
+    &-btn{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-family: var(--body-font);
+        color: var(--white-color);
+        background-color: var(--pink-color);
+        width: 20rem;
+        border-radius: 10px;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,.2);
+        }
+    }
+}

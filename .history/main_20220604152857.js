@@ -1,0 +1,1 @@
+document.querySelector('.style-switcher-toggler').o

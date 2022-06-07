@@ -1,0 +1,17 @@
+.content{
+  background-color: var(--light-grey-color-2);
+  position: absolute;
+  left: 27rem;
+  @media screen and (max-width: 1279.98px) {
+    left: 0;
+}
+}
+.section{
+    padding: 3rem 4rem;
+    position: relative;
+    @media screen and (max-width: 1279.98px) {
+      padding: 5rem ;
+    
+    }
+    @
+}

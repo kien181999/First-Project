@@ -1,0 +1,138 @@
+.about{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    &-title{
+        margin-bottom: 5rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -20%;
+            height: .5rem;
+            width: 10%;
+            background-color: var(--pink-color);
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -40%;
+            height: .5rem;
+            width: 15%;
+            background-color: var(--pink-color);
+        }
+    }
+    &-describe{
+        flex: 0 0 100%;
+        margin-bottom: 5rem;
+        max-width: 100%;
+    }
+    &-span{
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        font-family: var(--body-font);
+        font-weight: 400;
+    }
+    &-bio{
+        display: flex;
+    }
+    &-list{
+        flex: 0 0 50%;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-item{
+        flex: 0 0 50%;
+        display: flex;
+        margin-bottom: 2rem;
+        position: relative;
+        gap: 1rem;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5%;
+            height: 1px;
+            width: 70%;
+            background-color: var(--light-grey-color-1);
+        }
+    }
+    &-ability{
+        display: flex;
+        flex: 0 0 50%;
+        flex-direction: column;
+        margin-left: 5rem;
+        &__item{
+            flex: 0 0 40%;
+            max-width: 80%;
+        }
+        &__percent{
+            background-color: var(--light-grey-color-1);
+            height: 7px;
+            border-radius: 4px;
+            width: 100%;
+            position: relative;
+        }
+        &__progress{
+            margin-bottom: 1rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: var(--pink-color);
+            border-radius: 4px;
+        }
+        &__percent{
+            margin-bottom: 1rem;
+        }
+        &__number{
+            position: absolute;
+            right: 0;
+            top: -25px;
+        }
+        }
+    &-infor{
+        margin-bottom: 5rem;
+    }
+    &-education{
+        &__bio{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 2rem 4rem;
+            border-radius: 10px;
+            background-color: var(--white-color);
+            box-shadow: 0 10px 20px rgba(0,0,0,.2);
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                height: 90%;
+                width: 2px;
+                background-color: var(--pink-color);
+                top: 5%;
+                left: 1%;
+            }
+        }
+        &__title{
+            margin-bottom: 1rem;
+        }
+        &__timeline{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        &__icon{
+            font-size: 2rem;
+            position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                
+            }
+        }
+    }
+}

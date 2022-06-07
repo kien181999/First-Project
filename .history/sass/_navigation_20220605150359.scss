@@ -1,0 +1,17 @@
+.navigation{
+    &__checkbox{
+
+    }
+    &__button{
+        background-color: transparent;
+        height: 4rem;
+        width: 4rem;
+        position: fixed;
+        top: 3rem;
+        left: 120%;
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        box-shadow: 0 1rem 3rem rgba(0,0,0, .1);
+    }
+}

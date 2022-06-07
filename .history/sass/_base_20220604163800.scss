@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,700;1,600&family=Oleo+Script&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before,::after{
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body.dark{
+
+    --black-color: rgb(0, 0 ,0);
+    --light-black-color: #333;
+    --white-color: #fff;
+    --light-grey-color-1: #666;
+    --light-grey-color-2: rgb(243, 242, 242);
+    --pink-color: #eb2f64;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.container{
+    display: flex;
+    max-height: 100vh;
+}
+.hidden{
+    display: none !important;
+}

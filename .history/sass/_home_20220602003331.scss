@@ -1,0 +1,42 @@
+.home{
+    display: flex;
+    &-img{
+        display:grid;
+        place-items: center;
+    }
+    &-jpg{
+        height: 40rem;
+        width: 30rem;
+        margin-left: 10rem;
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &-name{
+        display: flex;
+     
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    &-job{
+        margin-bottom: 2rem;
+    }
+    &-describe{
+        margin-bottom: 10rem;
+    }
+    &-btn{
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-family: var(--body-font);
+        color: var(--white-color);
+        background-color: var(--pink-color);
+        width: 20rem;
+        border-radius: 10px;
+        transition: all .2s;
+        &:hover{
+            transform: translateY(-3);
+        }
+    }
+}

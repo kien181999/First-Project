@@ -1,0 +1,15 @@
+.home{
+    display: flex;
+    &-img{
+        display:grid;
+        pla
+    }
+    &-jpg{
+        height: 40rem;
+        width: 30rem;
+    }
+    &-text{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,26 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    &-title{
+        margin-bottom: 5rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -20%;
+            height: 1rem;
+            width: 10%;
+            background-color: var(--pink-color);
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -30%;
+            height: 1rem;
+            width: 20%;
+            background-color: var(--pink-color);
+        }
+    }
+}
