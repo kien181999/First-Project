@@ -18,7 +18,7 @@ html {
       font-size: 50%; } }
   @media screen and (max-width: 504.98px) {
     html {
-      font-size: 40%; } }
+      font-size: 30%; } }
 
 body.dark {
   --black-color: rgb(250, 246, 246);
@@ -561,7 +561,7 @@ body {
         right: 120%; } }
     @media screen and (max-width: 504.98px) {
       .style-switcher .s-icon {
-        right: 150%; } }
+        right: 220%; } }
     .style-switcher .s-icon i {
       line-height: 4rem; }
   .style-switcher .day-night {
