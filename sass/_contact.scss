@@ -20,6 +20,11 @@
         width: 100%;
         justify-content: space-around;
         margin-bottom: 3rem;
+        @media screen and (max-width: 767.98px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
     }
     &-link{
         display: flex;
@@ -47,6 +52,12 @@
             transition: all .1s;
             &:focus{
                 width: 45rem;
+            }
+            @media screen and (max-width: 767.98px) {
+                width: 30rem;
+                &:focus{
+                    width: 35rem;
+                }
             }
         }
         &__message{
