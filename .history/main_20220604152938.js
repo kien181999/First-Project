@@ -1,1 +1,0 @@
-document.querySelector('.style-switcher-toggler').onclick = () =>
