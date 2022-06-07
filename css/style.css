@@ -16,6 +16,9 @@ html {
   @media screen and (max-width: 1023.98px) {
     html {
       font-size: 50%; } }
+  @media screen and (max-width: 504.98px) {
+    html {
+      font-size: 40%; } }
 
 body.dark {
   --black-color: rgb(250, 246, 246);
@@ -245,7 +248,7 @@ body {
 
 .home {
   display: flex; }
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 854px) {
     .home {
       display: block; } }
   .home-img {
@@ -285,8 +288,9 @@ body {
     margin-right: 5rem; }
     @media screen and (max-width: 767.98px) {
       .home-text {
-        align-items: center;
-        margin-right: 0; } }
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 5rem auto; } }
   .home-name {
     display: flex;
     animation: moveInLeft 1s ease-in-out;
@@ -381,31 +385,34 @@ body {
       top: -25px; }
   .about-infor {
     margin-bottom: 5rem; }
-  .about-education__bio {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 4rem;
-    border-radius: 10px;
-    background-color: var(--white-color);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    position: relative; }
-    .about-education__bio::before {
-      position: absolute;
-      content: "";
-      height: 80%;
-      width: 2px;
-      background-color: var(--pink-color);
-      top: 10%;
-      left: 1%; }
-  .about-education__title {
-    margin-bottom: 1rem; }
-  .about-education__timeline {
-    display: flex;
-    gap: 2rem;
-    align-items: center; }
-  .about-education__icon {
-    font-size: 2rem; }
+  .about-education {
+    padding: 2rem 4rem; }
+    .about-education__bio {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem 4rem;
+      border-radius: 10px;
+      background-color: var(--white-color);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      position: relative;
+      max-width: 100%; }
+      .about-education__bio::before {
+        position: absolute;
+        content: "";
+        height: 80%;
+        width: 2px;
+        background-color: var(--pink-color);
+        top: 10%;
+        left: 3%; }
+    .about-education__title {
+      margin-bottom: 1rem; }
+    .about-education__timeline {
+      display: flex;
+      gap: 2rem;
+      align-items: center; }
+    .about-education__icon {
+      font-size: 2rem; }
 
 .service-title {
   margin-bottom: 5rem; }
@@ -417,7 +424,8 @@ body {
   @media screen and (max-width: 767.98px) {
     .service-list {
       grid-template-columns: auto auto;
-      gap: 2rem; } }
+      gap: 2rem;
+      padding: 2rem 4rem; } }
 
 .service-item {
   padding: 2rem 4rem;
@@ -427,7 +435,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer;
   align-items: center; }
+  @media screen and (max-width: 767.98px) {
+    .service-item {
+      max-width: 70%; } }
 
 .service-icon {
   font-size: 5rem;
@@ -459,6 +471,10 @@ body {
   width: 100%;
   justify-content: space-around;
   margin-bottom: 3rem; }
+  @media screen and (max-width: 767.98px) {
+    .contact-list {
+      display: grid;
+      grid-template-columns: auto auto; } }
 
 .contact-link {
   display: flex;
@@ -486,6 +502,11 @@ body {
     transition: all .1s; }
     .contact-form__control:focus {
       width: 45rem; }
+    @media screen and (max-width: 767.98px) {
+      .contact-form__control {
+        width: 30rem; }
+        .contact-form__control:focus {
+          width: 35rem; } }
   .contact-form__message {
     flex: 1;
     height: 10rem;
@@ -518,6 +539,9 @@ body {
   z-index: 100;
   border-radius: 5px;
   transition: all .3s ease; }
+  @media screen and (max-width: 504.98px) {
+    .style-switcher {
+      right: 130; } }
   .style-switcher .s-icon {
     position: absolute;
     height: 4rem;
@@ -535,6 +559,9 @@ body {
     @media screen and (max-width: 1023.98px) {
       .style-switcher .s-icon {
         right: 120%; } }
+    @media screen and (max-width: 504.98px) {
+      .style-switcher .s-icon {
+        right: 150%; } }
     .style-switcher .s-icon i {
       line-height: 4rem; }
   .style-switcher .day-night {
@@ -634,7 +661,7 @@ body {
     color: var(--pink-color);
     transform: translateX(1rem); }
   .navigation__checkbox:checked ~ .navigation__background {
-    transform: scale(80); }
+    transform: scale(90); }
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
