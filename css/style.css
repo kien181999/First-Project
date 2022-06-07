@@ -290,7 +290,8 @@ body {
       .home-text {
         flex: 0 0 100%;
         max-width: 100%;
-        margin: 5rem auto; } }
+        margin-right: 8rem;
+        margin-top: 5rem; } }
   .home-name {
     display: flex;
     animation: moveInLeft 1s ease-in-out;
@@ -404,7 +405,7 @@ body {
         width: 2px;
         background-color: var(--pink-color);
         top: 10%;
-        left: 3%; }
+        left: 1%; }
     .about-education__title {
       margin-bottom: 1rem; }
     .about-education__timeline {
@@ -412,7 +413,8 @@ body {
       gap: 2rem;
       align-items: center; }
     .about-education__icon {
-      font-size: 2rem; }
+      font-size: 2rem;
+      color: var(--black-color); }
 
 .service-title {
   margin-bottom: 5rem; }

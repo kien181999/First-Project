@@ -104,7 +104,7 @@
                 width: 2px;
                 background-color: var(--pink-color);
                 top: 10%;
-                left: 3%;
+                left: 1%;
             }
         }
         &__title{
@@ -117,7 +117,7 @@
         }
         &__icon{
             font-size: 2rem;
-         
+            color: var(--black-color);
         }
     }
 }
