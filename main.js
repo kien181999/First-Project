@@ -28,3 +28,14 @@ window.addEventListener("load", () =>{
         dayNight.querySelector("i").classList.add("ri-moon-line")
     }
 })
+
+
+// ===== Scroll ==== //
+
+ScrollReveal({
+    duration: 2500,
+    delay: 100
+});
+
+ScrollReveal().reveal('.heading-1-secondary', {delay: 500, origin: 'left'});
+ScrollReveal().reveal('.home-img', {delay: 500, origin: 'bottom'});
